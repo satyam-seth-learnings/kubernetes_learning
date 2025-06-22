@@ -8,6 +8,8 @@
 
 - [Minikube](https://minikube.sigs.k8s.io/docs/start)
 
+- [KIND](https://kind.sigs.k8s.io/)
+
 # Other Tools 
 
 - [Monokle](https://github.com/kubeshop/monokle)
