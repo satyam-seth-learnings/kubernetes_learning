@@ -209,3 +209,77 @@
 # Kubeadm Cluster Setup on Ubuntu Server
 
 - [Kubeadm Installation](https://github.com/LondheShubham153/kubestarter/tree/main/Kubeadm_Installation_Scripts_and_Documentation)
+
+# K8s Management
+
+- List kubernetes namespaces:
+
+  ```bash
+  kubectl get namespaces
+  ```
+
+  Or 
+
+  ```bash
+  kubectl get ns
+  ```
+
+- List kubernetes pods
+
+  ```bash
+  kubectl get pods
+  ```
+
+- List kubernetes pods in a specific namespace:
+
+  ```bash
+  kubectl get pods -n <namespace>
+  ```
+
+- List kubernetes pods in all namespaces:
+
+  ```bash
+  kubectl get pods --all-namespaces
+  ```
+
+- Create a kubernetes namespace:
+
+  ```bash
+  kubectl create namespace <namespace-name>
+  ```
+
+  Or
+
+  ```bash
+  kubectl create ns <namespace-name>
+  ```
+
+- Delete a kubernetes namespace:
+
+  ```bash
+  kubectl delete namespace <namespace-name>
+  ```
+
+  Or
+  
+  ```bash
+  kubectl delete ns <namespace-name>
+  ```
+
+- Run a kubernetes pod:
+
+  ```bash
+  kubectl run <pod-name> --image=<image-name>
+  ```
+
+- Run a kubernetes pod in a specific namespace:
+
+  ```bash
+  kubectl run <pod-name> --image=<image-name> -n <namespace>
+  ```
+
+- Delete a kubernetes pod:
+
+  ```bash
+  kubectl delete pod <pod-name>
+  ```
