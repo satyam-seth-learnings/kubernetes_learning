@@ -1,5 +1,9 @@
 - [YouTube Video Link](https://youtu.be/KVBON1lA9N8?si=UR_0OuOCc5PJpuC1)
 
+- [Blog](https://www.techwithkunal.com/blog/getting-started-with-kubernetes)
+
+- [Notes](https://github.com/kunal-kushwaha/DevOps-Bootcamp/blob/main/Kubernetes/Kubernetes%20-%201.pdf)
+
 - Start [minikube](https://minikube.sigs.k8s.io/docs/)
 
     ```sh
@@ -82,4 +86,10 @@
 
     ```sh
     kubectl delete deployments <deployment-name>
+    ```
+
+- Create pod from a file
+
+    ```sh
+    kubectl create -f pod.yaml
     ```
