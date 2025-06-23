@@ -283,3 +283,27 @@
   ```bash
   kubectl delete pod <pod-name>
   ```
+
+- Apply a kubernetes configuration file
+
+  ```bash
+  kubectl apply -f <yaml-file>
+  ```
+
+- Enter into a kubernetes pod:
+
+  ```bash
+  kubectl exec -it <pod-name> -n <namespace> --bash
+  ```
+
+- Describe a kubernetes pod:
+
+  ```bash
+  kubectl describe pod <pod-name> -n <namespace>
+  ```
+
+- List kubernetes deployments in a specific namespace:
+
+  ```bash
+  kubectl get deployment -n <namespace>
+  ```
