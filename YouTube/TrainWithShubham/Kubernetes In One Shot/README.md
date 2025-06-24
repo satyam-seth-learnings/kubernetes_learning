@@ -381,3 +381,9 @@
   ```bash
   kubectl get pv
   ```
+
+- Prot forward a kubernetes pod:
+
+  ```bash
+  kubectl port-forward pod/<pod-name> <local-port>:<pod-port> -n <namespace>
+  ```
