@@ -373,3 +373,11 @@
   ```bash
   kubectl get cronjobs -n <namespace>
   ```
+
+- [corntab](https://crontab.guru/) - quick and simple editor for cron schedule expressions
+
+- List kubernetes persistent volumes:
+
+  ```bash
+  kubectl get pv
+  ```
