@@ -367,3 +367,9 @@
   ```bash
   kubectl get jobs -n <namespace>
   ```
+
+- List kubernetes cronjobs in a specific namespace:
+
+  ```bash
+  kubectl get cronjobs -n <namespace>
+  ```
