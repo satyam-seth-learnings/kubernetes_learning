@@ -232,8 +232,14 @@
 
 - List kubernetes pods in a specific namespace:
 
-  ```bash
+  ```bash   
   kubectl get pods -n <namespace>
+  ```
+
+- List kubernetes pods with wide output:
+
+  ```bash
+  kubectl get pods -o wide -n <namespace>
   ```
 
 - List kubernetes pods in all namespaces:
@@ -290,6 +296,12 @@
   kubectl apply -f <yaml-file>
   ```
 
+- Delete a kubernetes resource using a configuration file:
+
+  ```bash
+  kubectl delete -f <yaml-file>
+  ```
+
 - Enter into a kubernetes pod:
 
   ```bash
@@ -306,4 +318,40 @@
 
   ```bash
   kubectl get deployment -n <namespace>
+  ```
+
+- Scale a kubernetes deployment:
+
+  ```bash
+  kubectl scale deployment/<deployment-name> -n <namespace> --replicas=<replica-count>
+  ```
+
+- Update a kubernetes deployment image:
+
+  ```bash
+  kubectl set image deployment/<deployment-name> -n <namespace> <container-name>=<new-image>
+  ```
+
+- List kubernetes replicasets in a specific namespace:
+
+  ```bash
+  kubectl get replicasets -n <namespace>
+  ```
+
+  Or
+
+  ```bash
+  kubectl get rs -n <namespace>
+  ```
+
+- List kubernetes daemonsets in a specific namespace:
+
+  ```bash
+  kubectl get daemonsets -n <namespace>
+  ```
+
+  Or
+
+  ```bash
+  kubectl get ds -n <namespace>
   ```

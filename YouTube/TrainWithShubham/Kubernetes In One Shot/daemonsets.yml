@@ -1,10 +1,9 @@
-kind: Deployment
+kind: DaemonSet
 apiVersion: apps/v1
 metadata:
-  name: nginx-deployment
+  name: nginx-daemonsets
   namespace: nginx
 spec:
-  replicas: 2
   selector:
     matchLabels:
       app: nginx
@@ -12,7 +11,7 @@ spec:
   template:
     metadata:
       labels:
-        name: nginx-dep-pod
+        name: nginx-dmn-pod
         app: nginx
 
     spec:
