@@ -290,6 +290,12 @@
   kubectl delete pod <pod-name>
   ```
 
+- Print the kubernetes pod logs:
+
+  ```bash
+  kubectl logs pod/<pod-name> -n <namespace>
+  ```
+
 - Apply a kubernetes configuration file
 
   ```bash
@@ -354,4 +360,10 @@
 
   ```bash
   kubectl get ds -n <namespace>
+  ```
+
+- List kubernetes jobs in a specific namespace:
+
+  ```bash
+  kubectl get jobs -n <namespace>
   ```
